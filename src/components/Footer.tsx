@@ -84,7 +84,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Buy $Cockbull</h3>
             <p className="text-gray-400 mb-4">
-              Get your $MEME tokens now on these exchanges:
+              Get your $COCKBULL tokens now on these exchanges:
             </p>
             <div className="space-y-2">
               {[ "raydium", "moonshot"].map((exchange, index) => (
