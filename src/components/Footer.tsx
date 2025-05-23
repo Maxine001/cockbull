@@ -104,7 +104,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              © {currentYear} MemeCoin. All rights reserved.
+              © {currentYear} CockBull. All rights reserved.
             </p>
             <div className="flex space-x-6">
               {["Privacy Policy", "Terms of Service", "Cookie Policy", "Disclaimer"].map((policy, index) => (
@@ -119,7 +119,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-4 text-center text-xs text-gray-600">
-            <p>$MEME is a meme coin with no intrinsic value or financial return expectation. Use for entertainment purposes only.</p>
+            <p>$COCKBULL is a meme coin with no intrinsic value or financial return expectation. Use for entertainment purposes only.</p>
           </div>
         </div>
       </div>
