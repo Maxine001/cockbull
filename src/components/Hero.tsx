@@ -69,11 +69,11 @@ const Hero = () => {
             
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-8">
               <div className="text-center">
-                <p className="text-3xl font-bold text-gradient animate-pulse-slow">currently unavailable</p>
+                <p className="text-3xl font-bold text-gradient animate-pulse-slow">2</p>
                 <p className="text-gray-500">Holders</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-gradient animate-pulse-slow">$currenly unavilable</p>
+                <p className="text-3xl font-bold text-gradient animate-pulse-slow">$200k</p>
                 <p className="text-gray-500">Market Cap</p>
               </div>
               <div className="text-center">

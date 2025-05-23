@@ -77,7 +77,7 @@ const Stats = () => {
     {
       icon: <Coins className="h-10 w-10 text-coin-orange" />,
       title: "Market Cap",
-      value: 2,
+      value: 200000,
       prefix: "$",
       suffix: "",
       duration: 2000,
