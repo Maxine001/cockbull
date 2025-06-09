@@ -77,7 +77,7 @@ const Stats = () => {
     {
       icon: <Coins className="h-10 w-10 text-coin-orange" />,
       title: "Market Cap",
-      value: 200000,
+      value: 6300,
       prefix: "$",
       suffix: "",
       duration: 2000,
@@ -86,7 +86,7 @@ const Stats = () => {
     {
       icon: <Users className="h-10 w-10 text-coin-green" />,
       title: "Holders",
-      value: 2,
+      value: 20,
       prefix: "",
       suffix: "+",
       duration: 1500,
@@ -95,7 +95,7 @@ const Stats = () => {
     {
       icon: <TrendingUp className="h-10 w-10 text-coin-blue" />,
       title: "Price Growth",
-      value: 1240,
+      value: 10,
       prefix: "",
       suffix: "%",
       duration: 2500,
@@ -104,7 +104,7 @@ const Stats = () => {
     {
       icon: <Sparkles className="h-10 w-10 text-coin-purple" />,
       title: "Burned Tokens",
-      value: 45.72,
+      value: 5,
       prefix: "",
       suffix: "%",
       duration: 1800,

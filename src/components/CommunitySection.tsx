@@ -5,25 +5,25 @@ const CommunitySection = () => {
   const communities = [
     {
       name: "Twitter",
-      followers: "52K+",
+      followers: "200+",
       icon: (
         <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
           <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
         </svg>
       ),
       color: "bg-blue-500",
-      link: "#",
+      link: "https://x.com/cock_bull00?s=21&t=Z-jRcJtbTsPZ_jgkNBApCQ",
     },
     {
       name: "Telegram",
-      followers: "38K+",
+      followers: "200+",
       icon: (
         <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
           <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l.013-.007.87 2.87c.112.311.266.367.453.341.188-.025.287-.126.41-.244l1.188-1.148 2.55 1.888c.466.257.801.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.702-.788l-9.733 3.76c-.664.266-.66.638-.12.8z" />
         </svg>
       ),
       color: "bg-blue-400",
-      link: "#",
+      link: "https://t.me/cocknbull6",
     },
     {
       name: "Discord",

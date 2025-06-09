@@ -38,7 +38,7 @@ const Features = () => {
     <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-gradient">$MEME</span> Coin?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-gradient">$Cockbull</span> Coin?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Not just another meme token. We're building a complete ecosystem with real utility and exciting features.
           </p>

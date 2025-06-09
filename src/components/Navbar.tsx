@@ -63,10 +63,11 @@ const Navbar = () => {
           </a>
         </div>
 
+      
+       
         <div className="hidden md:block">
-          <Button className="btn-gradient rounded-full text-white px-6 py-2">
-            Buy Now
-          </Button>
+         <a href="https://pump.fun/coin/7hwG8pesjxme8B87qGCjUUZEPbCWWsGJjT2J9zMWpump"><Button>Buy now</Button></a>
+         
         </div>
 
         {/* Mobile Menu Button */}

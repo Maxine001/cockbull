@@ -22,6 +22,39 @@ const Hero = () => {
     setIsImageLoaded(true);
   };
 
+
+
+
+  const tokenAddress = '7hwG8pesjxme8B87qGCjUUZEPbCWWsGJjT2J9zMWpump'; // Replace with yours
+  const [marketCap, setMarketCap] = useState(null);
+  const [holders, setHolders] = useState(null);
+  const [error, setError] = useState(null);
+
+  const fetchTokenStats = async () => {
+    try {
+      const res = await fetch(
+        `https://public-api.solscan.io/token/meta?tokenAddress=${tokenAddress}`,
+        { headers: { accept: 'application/json' } }
+      );
+
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const data = await res.json();
+      setMarketCap(data.marketCap || 0);
+      setHolders(data.holderCount || 0);
+      setError(null);
+    } catch (err) {
+      console.error('Failed to fetch token data:', err);
+      setError('Could not load stats');
+    }
+  };
+
+  useEffect(() => {
+    fetchTokenStats();
+    const interval = setInterval(fetchTokenStats, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen pt-28 pb-20 overflow-hidden">
       {/* Animated background coins */}
@@ -45,7 +78,7 @@ const Hero = () => {
           <div className="lg:w-1/2 text-center lg:text-left">
             <div className="bg-coin-orange/10 text-coin-orange rounded-full inline-flex items-center px-4 py-2 mb-6 animate-fade-in">
               <TrendingUp className="h-4 w-4 mr-2" />
-              <span className="text-sm font-semibold">Now on Moonshot!</span>
+              <span className="text-sm font-semibold">Now on Pumpfun!</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -59,28 +92,17 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="btn-gradient rounded-full text-white px-8 py-6 text-lg animate-bounce-small">
+              <Button
+                onClick={() => window.open('https://pump.fun/coin/7hwG8pesjxme8B87qGCjUUZEPbCWWsGJjT2J9zMWpump', '_blank')}
+                className="btn-gradient rounded-full text-white px-8 py-6 text-lg animate-bounce-small"
+              >
                 <Bitcoin className="mr-2 h-5 w-5" /> Buy $COCKBULL
               </Button>
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg border-2 hover:bg-transparent hover:text-coin-orange transition-all duration-300">
                 Read Whitepaper
               </Button>
             </div>
-            
-            <div className="mt-8 flex items-center justify-center lg:justify-start gap-8">
-              <div className="text-center">
-                <p className="text-3xl font-bold text-gradient animate-pulse-slow">2</p>
-                <p className="text-gray-500">Holders</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-gradient animate-pulse-slow">$200k</p>
-                <p className="text-gray-500">Market Cap</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-gradient animate-pulse-slow">100K+</p>
-                <p className="text-gray-500">Community</p>
-              </div>
-            </div>
+          
           </div>
           
           <div className="lg:w-1/2 relative">
